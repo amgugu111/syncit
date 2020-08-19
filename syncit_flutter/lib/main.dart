@@ -13,15 +13,16 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider<DataProvider>(
         create: (context) => DataProvider(), 
         child: MaterialApp(
-        title: 'SyncIt',
+        title: 'SyncIT',
         theme: ThemeData(
           primarySwatch: Colors.red,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         debugShowCheckedModeBanner: false,
-        home: YoutubeSearch(
-          query: 'flutter',
-        ),
+        home: ChatPage(),
+        // home: YoutubeSearch(
+        //   query: 'flutter',
+        // ),
       )
     );
   }
